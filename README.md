@@ -62,6 +62,6 @@ npm run lint
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Abner Trindade** para o Bootcamp de Engenharia de Software.
+Desenvolvido por **Abner Trindade** para o Bootcamp Desafio Inicial.
 
 🔗 [github.com/Trindaddy/controle-financeiro-cli](https://github.com/Trindaddy/controle-financeiro-cli)
