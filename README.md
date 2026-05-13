@@ -1,5 +1,8 @@
 # 💰 FinCLI - Controle Financeiro Pessoal
 
+## 🚀 Deploy (Link Público)
+    Acesse a aplicação pronta para uso aqui: [https://codesandbox.io/p/github/Trindaddy/controle-financeiro-cli/main?import=true]
+
 [![Validação Contínua (CI)](https://github.com/Trindaddy/controle-financeiro-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/Trindaddy/controle-financeiro-cli/actions/workflows/ci.yml)
 
 **Versão:** 1.0.0
@@ -66,5 +69,14 @@ Desenvolvido por **Abner Trindade** para o Bootcamp Desafio Inicial.
 
 🔗 [github.com/Trindaddy/controle-financeiro-cli](https://github.com/Trindaddy/controle-financeiro-cli)
 
-## 🚀 Aplicação Publicada (Deploy)
-Acesse e rode o projeto diretamente na nuvem: [Clique aqui para rodar no Replit](https://codesandbox.io/p/github/Trindaddy/controle-financeiro-cli/main?import=true)
+---
+
+### Passo 8: O PDF de Entrega (Checklist Final)
+Conforme o barema de avaliação (image_775073.png), o seu PDF deve ser objetivo. Crie um documento com:
+
+*   **Identificação:** Abner Trindade de Aguiar Fernandes.
+*   **Link do Repositório GitHub:** (Deve estar público e com o merge da branch `entrega-intermediaria` feito).
+*   **Link do Deploy:** (O link do CodeSandbox onde o avaliador pode testar).
+*   **Resumo da Evolução:** "Nesta etapa, integramos a AwesomeAPI para cotação de moedas em tempo real, implementamos testes de integração com mocks de rede e utilizamos GitHub Issues para gestão da demanda."
+
+**Dica de mestre:** Verifique se o Badge de build no seu README está **verde**. Se estiver, você provou que sua "Manutenção Geral" está impecável! 
