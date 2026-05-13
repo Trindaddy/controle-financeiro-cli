@@ -2,6 +2,9 @@
 
 [![Validação Contínua (CI)](https://github.com/Trindaddy/controle-financeiro-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/Trindaddy/controle-financeiro-cli/actions/workflows/ci.yml)
 
+## 🚀 Deploy (Link Público)
+    Acesse a aplicação pronta para uso aqui: [https://codesandbox.io/p/github/Trindaddy/controle-financeiro-cli/main?import=true]
+
 **Versão:** 1.0.0
 
 ---
