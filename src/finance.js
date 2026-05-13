@@ -42,10 +42,26 @@ function limparTransacoes() {
     transacoes = [];
 }
 
+async function obterCotacoes() {
+    try {
+        const response = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL");
+        if (!response.ok) throw new Error("Erro na comunicação com a API");
+        
+        const data = await response.json();
+        return {
+            dolar: parseFloat(data.USDBRL.ask),
+            euro: parseFloat(data.EURBRL.ask)
+        };
+    } catch (error) {
+        throw new Error(`Não foi possível obter as cotações no momento. Detalhe: ${error.message}`);
+    }
+}
+
 // Exportamos as funções para usá-las na interface e nos testes
 module.exports = {
     adicionarTransacao,
     calcularSaldo,
     listarExtrato,
-    limparTransacoes
+    limparTransacoes,
+    obterCotacoes
 };
