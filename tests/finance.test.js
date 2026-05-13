@@ -27,4 +27,27 @@ describe("Testes do Módulo Financeiro", () => {
             finance.adicionarTransacao("Erro", -50, "receita");
         }).toThrow("O valor deve ser um número maior que zero.");
     });
+
+    // 4. Teste de Integração: Simulando o consumo da API
+    test("Deve obter cotações de moedas da API corretamente", async () => {
+        // Simulamos a resposta da API nativa (Mock)
+        global.fetch = jest.fn(() =>
+            Promise.resolve({
+                ok: true,
+                json: () => Promise.resolve({
+                    USDBRL: { ask: "5.00" },
+                    EURBRL: { ask: "5.50" }
+                })
+            })
+        );
+
+        const cotacoes = await finance.obterCotacoes();
+        
+        expect(cotacoes.dolar).toBe(5.00);
+        expect(cotacoes.euro).toBe(5.50);
+        expect(global.fetch).toHaveBeenCalledTimes(1);
+        
+        // Limpa o mock após o teste
+        global.fetch.mockClear();
+    });
 });

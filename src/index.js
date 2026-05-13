@@ -8,6 +8,7 @@ function exibirMenu() {
     console.log("1. Registrar Receita");
     console.log("2. Registrar Despesa");
     console.log("3. Ver Extrato e Saldo");
+    console.log("4. Ver Saldo em Dólar/Euro (API API externa)");
     console.log("0. Sair");
     return readline.question("Escolha uma opcao: ");
 }
