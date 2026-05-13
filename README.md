@@ -60,11 +60,14 @@ npm run lint
 
 ---
 
+## 🚀 Aplicação Publicada (Deploy)
+Acesse e rode o projeto diretamente na nuvem: [Clique aqui para rodar no CodeSandBox](https://codesandbox.io/p/github/Trindaddy/controle-financeiro-cli/main?import=true)
+
+---
+
 ## 👨‍💻 Autor
 
 Desenvolvido por **Abner Trindade** para o Bootcamp Desafio Inicial.
 
 🔗 [github.com/Trindaddy/controle-financeiro-cli](https://github.com/Trindaddy/controle-financeiro-cli)
 
-## 🚀 Aplicação Publicada (Deploy)
-Acesse e rode o projeto diretamente na nuvem: [Clique aqui para rodar no CodeSandBox](https://codesandbox.io/p/github/Trindaddy/controle-financeiro-cli/main?import=true)
