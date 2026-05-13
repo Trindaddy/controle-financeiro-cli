@@ -2,9 +2,6 @@
 
 [![Validação Contínua (CI)](https://github.com/Trindaddy/controle-financeiro-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/Trindaddy/controle-financeiro-cli/actions/workflows/ci.yml)
 
-## 🚀 Deploy (Link Público)
-    Acesse a aplicação pronta para uso aqui: [https://codesandbox.io/p/github/Trindaddy/controle-financeiro-cli/main?import=true]
-
 **Versão:** 1.0.0
 
 ---
@@ -70,4 +67,4 @@ Desenvolvido por **Abner Trindade** para o Bootcamp Desafio Inicial.
 🔗 [github.com/Trindaddy/controle-financeiro-cli](https://github.com/Trindaddy/controle-financeiro-cli)
 
 ## 🚀 Aplicação Publicada (Deploy)
-Acesse e rode o projeto diretamente na nuvem: [Clique aqui para rodar no Replit](https://codesandbox.io/p/github/Trindaddy/controle-financeiro-cli/main?import=true)
+Acesse e rode o projeto diretamente na nuvem: [Clique aqui para rodar no CodeSandBox](https://codesandbox.io/p/github/Trindaddy/controle-financeiro-cli/main?import=true)
