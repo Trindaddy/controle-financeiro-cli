@@ -93,7 +93,7 @@ npm run lint
  
 ## 👨‍💻 Autor
  
-Desenvolvido por **Abner Trindade** durante o Bootcamp de Engenharia de Software.
+Desenvolvido por **Abner Trindade** durante o Bootcamp.
  
 [![GitHub](https://img.shields.io/badge/GitHub-Trindaddy-181717?style=flat&logo=github)](https://github.com/Trindaddy)
 [![NPM](https://img.shields.io/badge/NPM-%40trindaddy%2Ffincli-CB3837?style=flat&logo=npm)](https://www.npmjs.com/package/@trindaddy/fincli)
