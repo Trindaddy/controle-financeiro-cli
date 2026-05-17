@@ -1,8 +1,11 @@
 {
-  "name": "controle-financeiro-cli",
-  "version": "1.0.0",
+  "name": "@trindaddy/fincli",
+  "version": "1.0.2",
   "description": "Uma aplicação CLI simples para gerenciamento de gastos pessoais.",
   "main": "src/index.js",
+  "bin": {
+    "fincli": "src/index.js"
+  },
   "scripts": {
     "start": "node src/index.js",
     "test": "jest",

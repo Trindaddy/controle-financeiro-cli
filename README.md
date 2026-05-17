@@ -1,82 +1,99 @@
-# 💰 FinCLI - Controle Financeiro Pessoal
-
-## 🚀 Deploy (Link Público)
-    Acesse a aplicação pronta para uso aqui: [https://codesandbox.io/p/github/Trindaddy/controle-financeiro-cli/main?import=true]
-
-[![Validação Contínua (CI)](https://github.com/Trindaddy/controle-financeiro-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/Trindaddy/controle-financeiro-cli/actions/workflows/ci.yml)
-
-**Versão:** 1.0.0
-
+# 💰 FinCLI — Controle Financeiro Pessoal
+ 
+**Versão:** `1.0.2` (Release Estável)
+ 
+O FinCLI é uma solução robusta em linha de comando para gestão de finanças pessoais, desenvolvida para unir simplicidade e automação técnica.
+ 
 ---
-
+ 
+## 🚀 Execução Rápida (Deploy via NPM)
+ 
+Não precisa clonar o repositório para testar! Se você tem o Node.js instalado, execute a aplicação agora diretamente do registro oficial do NPM:
+ 
+```bash
+npx @trindaddy/fincli@latest
+```
+ 
+---
+ 
 ## 🎯 Sobre o Projeto
-
-**O Problema (Dor Real):** A falta de previsibilidade e organização financeira do dia a dia leva muitas pessoas a perderem o controle de seus gastos, dificultando o planejamento e causando estresse.
-
-**A Solução:** O FinCLI é uma aplicação de linha de comando (CLI) simples e direta que permite registrar receitas e despesas rapidamente, gerando um extrato e calculando o saldo atual.
-
-**Público-alvo:** Jovens adultos, estudantes e profissionais que buscam um controle financeiro rápido e sem a complexidade de planilhas pesadas ou aplicativos cheios de anúncios.
-
+ 
+**O Problema (Dor Real):** A falta de previsibilidade financeira causa estresse e desorganização. Muitas soluções são complexas demais ou cheias de anúncios.
+ 
+**A Solução:** Uma ferramenta CLI *(Command Line Interface)* focada em agilidade, permitindo registros rápidos de fluxo de caixa e cotações em tempo real.
+ 
+**Público-alvo:** Desenvolvedores e profissionais que buscam controle financeiro direto no terminal.
+ 
 ---
-
+ 
+## 🆕 Novidades da Versão Intermediária
+ 
+- **Integração com API Externa:** Consumo da AwesomeAPI para conversão de saldo em Dólar e Euro em tempo real.
+- **Testes de Integração:** Implementação de mocks de rede com Jest para validar a comunicação com serviços externos.
+- **Deploy Profissional:** Publicação do pacote no NPM Registry sob escopo `@trindaddy`.
+---
+ 
 ## 🛠 Tecnologias Utilizadas
-
-| Categoria        | Tecnologia          |
-|------------------|---------------------|
-| Linguagem        | JavaScript (Node.js) |
-| Interface        | CLI (`readline-sync`) |
-| Testes           | Jest                |
-| Qualidade        | ESLint              |
-| CI/CD            | GitHub Actions      |
-
+ 
+| Categoria  | Tecnologia                  |
+|------------|-----------------------------|
+| Linguagem  | JavaScript (Node.js)        |
+| Interface  | CLI (readline-sync)         |
+| Integração | Fetch API (AwesomeAPI)      |
+| Testes     | Jest (Unitários e Integração) |
+| Qualidade  | ESLint (Flat Config v9+)    |
+| CI/CD      | GitHub Actions              |
+ 
 ---
-
-## ⚙️ Como Executar
-
+ 
+## ⚙️ Desenvolvimento Local
+ 
 ### 1. Instalação
-
-Certifique-se de ter o [Node.js](https://nodejs.org) instalado. Clone o repositório e instale as dependências:
-
+ 
 ```bash
 git clone https://github.com/Trindaddy/controle-financeiro-cli.git
 cd controle-financeiro-cli
 npm install
 ```
-
-### 2. Execução
-
-Para iniciar o sistema e acessar o menu interativo:
-
+ 
+### 2. Rodando os Testes e Qualidade
+ 
+Essenciais para garantir que novas funcionalidades não quebrem o sistema:
+ 
 ```bash
-npm start
-```
-
-### 3. Testes e Lint
-
-```bash
-# Executa os testes automatizados (caminho feliz, fluxos alternativos e erros)
+# Executa todos os testes (Unitários e Integração com Mocks)
 npm test
-
-# Executa a verificação estática do código
+ 
+# Executa a análise estática de código
 npm run lint
 ```
-
+ 
 ---
-
+ 
+## 📂 Estrutura do Projeto
+ 
+```
+├── .github/workflows/  # Configuração do CI/CD (GitHub Actions)
+├── src/
+│   ├── finance.js      # Regras de negócio e consumo de API
+│   └── index.js        # Interface de usuário (Menu CLI)
+├── tests/              # Testes automatizados
+├── package.json        # Manifesto do projeto e dependências
+└── eslint.config.js    # Configurações de padronização de código
+```
+ 
+---
+ 
+## 📝 Notas de Versão
+ 
+- **v1.0.0:** Estrutura inicial e CRUD básico.
+- **v1.0.1:** Preparação para deploy e configuração de binários.
+- **v1.0.2:** Hotfix de lógica no menu de cotações e estabilização do comando `npx`.
+---
+ 
 ## 👨‍💻 Autor
-
-Desenvolvido por **Abner Trindade** para o Bootcamp Desafio Inicial.
-
-🔗 [github.com/Trindaddy/controle-financeiro-cli](https://github.com/Trindaddy/controle-financeiro-cli)
-
----
-
-### Passo 8: O PDF de Entrega (Checklist Final)
-Conforme o barema de avaliação (image_775073.png), o seu PDF deve ser objetivo. Crie um documento com:
-
-*   **Identificação:** Abner Trindade de Aguiar Fernandes.
-*   **Link do Repositório GitHub:** (Deve estar público e com o merge da branch `entrega-intermediaria` feito).
-*   **Link do Deploy:** (O link do CodeSandbox onde o avaliador pode testar).
-*   **Resumo da Evolução:** "Nesta etapa, integramos a AwesomeAPI para cotação de moedas em tempo real, implementamos testes de integração com mocks de rede e utilizamos GitHub Issues para gestão da demanda."
-
-**Dica de mestre:** Verifique se o Badge de build no seu README está **verde**. Se estiver, você provou que sua "Manutenção Geral" está impecável! 
+ 
+Desenvolvido por **Abner Trindade** durante o Bootcamp de Engenharia de Software.
+ 
+[![GitHub](https://img.shields.io/badge/GitHub-Trindaddy-181717?style=flat&logo=github)](https://github.com/Trindaddy)
+[![NPM](https://img.shields.io/badge/NPM-%40trindaddy%2Ffincli-CB3837?style=flat&logo=npm)](https://www.npmjs.com/package/@trindaddy/fincli)
