@@ -67,7 +67,6 @@ Acesse e rode o projeto diretamente na nuvem: [Clique aqui para rodar no CodeSan
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Abner Trindade** para o Bootcamp Desafio Inicial.
+Desenvolvido por **Abner Trindade** para o Bootcamp.
 
 🔗 [github.com/Trindaddy/controle-financeiro-cli](https://github.com/Trindaddy/controle-financeiro-cli)
-

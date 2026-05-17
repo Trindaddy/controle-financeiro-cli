@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // src/index.js
 
 const readline = require("readline-sync");
@@ -13,7 +14,7 @@ function exibirMenu() {
     return readline.question("Escolha uma opcao: ");
 }
 
-function main() {
+async function main() {
     let rodando = true;
 
     while (rodando) {
@@ -55,14 +56,24 @@ function main() {
             }
             console.log(`\n💰 Saldo Atual: R$ ${finance.calcularSaldo().toFixed(2)}`);
             break;
-
+        case "4":
+            console.log("Consultando cotacoes em tempo real...");
+            try {
+                const cotacoes = await finance.obterCotacoes();
+                const saldoAtual = finance.calcularSaldo();
+                console.log(`\n💵 Seu saldo em Reais: R$ ${saldoAtual.toFixed(2)}`);
+                console.log(`🇺🇸 Em Dolares (Cotacao R$ ${cotacoes.dolar.toFixed(2)}): $ ${(saldoAtual / cotacoes.dolar).toFixed(2)}`);
+                console.log(`🇪🇺 Em Euros (Cotacao R$ ${cotacoes.euro.toFixed(2)}): € ${(saldoAtual / cotacoes.euro).toFixed(2)}`);
+            } catch (error) {
+                console.log(`❌ ${error.message}`);
+            }
+            break;
+        // --------------------------------
         case "0":
-            console.log("Saindo... Cuide bem do seu dinheiro! Até logo.");
             rodando = false;
             break;
-
         default:
-            console.log("❌ Opção inválida. Digite um número de 0 a 3.");
+            console.log("❌ Opção inválida.");
         }
     }
 }
